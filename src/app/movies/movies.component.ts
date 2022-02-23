@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
 import { AxiosService } from '../axios.service';
 
 @Component({
@@ -9,7 +11,13 @@ import { AxiosService } from '../axios.service';
 export class MoviesComponent implements OnInit {
 
   movies : any[] = []
-  constructor(private axios : AxiosService) { }
+  constructor(private axios : AxiosService, private ar : ActivatedRoute, private router: Router) { }
+
+  editMovie(id: number) 
+  { console.log(id)
+  this.router.navigate([`/movies/${id}`])
+  
+  }
 
   ngOnInit(): void {
     this.axios.getMovies()

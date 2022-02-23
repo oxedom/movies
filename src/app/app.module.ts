@@ -10,13 +10,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, NgForm} from '@angular/forms';
 import { HttpClientModule, HttpClient}from  '@angular/common/http'
 import { CommonModule } from '@angular/common';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddComponent,
     MovieformComponent,
-    MoviesComponent
+    MoviesComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

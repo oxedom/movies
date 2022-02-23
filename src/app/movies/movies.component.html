@@ -1,10 +1,10 @@
-<h1>IMBD</h1> <br>
-<!-- add a router link to add movies -->
-<router-outlet></router-outlet>
 <a [routerLink]="['add']" >Click me</a>
 <hr>
 <div *ngFor="let m of movies" class="movieContainer">
+
+<div (click)="editMovie(m.id)">
 <p> {{m.name}}</p>
 <p> {{m.language}}</p>
+</div>    
 </div>
 
