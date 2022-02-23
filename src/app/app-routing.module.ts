@@ -4,6 +4,7 @@ import { AddComponent } from './add/add.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { MovieformComponent } from './movieform/movieform.component';
 import { MoviesComponent } from './movies/movies.component';
+import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
 { path: 'movies', component: HomepageComponent, children: 
@@ -12,7 +13,8 @@ const routes: Routes = [
     { path: 'movie/:id', component: MovieformComponent},
     { path: 'add', component: AddComponent},
   ]
-}
+},
+{path: 'users', component: UsersComponent}
 ];
 
 @NgModule({

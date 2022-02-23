@@ -11,6 +11,7 @@ import { FormsModule, NgForm} from '@angular/forms';
 import { HttpClientModule, HttpClient}from  '@angular/common/http'
 import { CommonModule } from '@angular/common';
 import { HomepageComponent } from './homepage/homepage.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     AddComponent,
     MovieformComponent,
     MoviesComponent,
-    HomepageComponent
+    HomepageComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
