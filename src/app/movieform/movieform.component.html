@@ -3,8 +3,8 @@
 
 <form class="form" #f="ngForm" (ngSubmit)="updateMovie(f)">
 
-<input type="text" ngModel name="name" placeholder="name" >
-<input type="text" ngModel name="runtime" placeholder="runtime">
-<input type="text" ngModel name="language" placeholder="language">
+<input type="text" [(ngModel)]="movieObj.name" name="name" placeholder="name" >
+<input type="number" [(ngModel)]="+movieObj.runtime" name="runtime" placeholder="runtime">
+<input type="text" [(ngModel)]="movieObj.language" name="language" placeholder="language">
 <input type="submit" value="Update Movie">
 </form>

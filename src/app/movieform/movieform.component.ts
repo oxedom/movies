@@ -10,7 +10,7 @@ import { AxiosService } from '../axios.service';
 export class MovieformComponent implements OnInit {
 
 id: any
-movieObj : any
+movieObj : any = { name: "", runtime: "", language : ""}
   constructor(private axios : AxiosService, private route: ActivatedRoute) 
   {
 

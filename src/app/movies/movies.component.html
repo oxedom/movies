@@ -4,7 +4,7 @@
 <div *ngFor="let m of movies" class="movieContainer">
 
 <div (click)="editMovie(m.id)">
-    <a [routerLink]="['/movies/', m.id]">Alt link</a>
+    <a [routerLink]="['/movies/movie', m.id]">Alt link</a>
     
 <p> {{m.name}}</p>
 <p> {{m.language}}</p>

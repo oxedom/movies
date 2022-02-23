@@ -15,7 +15,7 @@ export class MoviesComponent implements OnInit {
 
   editMovie(id: number) 
   { console.log(id)
-  this.router.navigate([`/movies/${id}`])
+  this.router.navigate([`/movies/movie/${id}`])
   
   }
 
