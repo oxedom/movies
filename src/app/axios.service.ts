@@ -11,11 +11,11 @@ export class AxiosService {
   }
 
   getOneMovie(id: number) {
-    return this.http.get(`http://api.tvmaze.com/shows${id}`)
+    return this.http.get(`http://api.tvmaze.com/shows/${id}`)
   }
 
   updateOneMovie(id : number, movieObj : any) {
-    return this.http.put(`http://api.tvmaze.com/shows${id}`, movieObj)
+    return this.http.put(`http://api.tvmaze.com/shows/${id}`, movieObj)
   }
 
   addAMovie(movieObj: any) {

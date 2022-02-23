@@ -1,8 +1,11 @@
+<router-outlet></router-outlet>
 <a [routerLink]="['add']" >Click me</a>
 <hr>
 <div *ngFor="let m of movies" class="movieContainer">
 
 <div (click)="editMovie(m.id)">
+    <a [routerLink]="['/movies/', m.id]">Alt link</a>
+    
 <p> {{m.name}}</p>
 <p> {{m.language}}</p>
 </div>    

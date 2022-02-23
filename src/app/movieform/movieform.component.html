@@ -1,1 +1,10 @@
-<p>movieform works!</p>
+<a [routerLink]="['/movies']" >Back to movies</a>
+<h1> Movie form</h1>
+
+<form class="form" #f="ngForm" (ngSubmit)="updateMovie(f)">
+
+<input type="text" ngModel name="name" placeholder="name" >
+<input type="text" ngModel name="runtime" placeholder="runtime">
+<input type="text" ngModel name="language" placeholder="language">
+<input type="submit" value="Update Movie">
+</form>
